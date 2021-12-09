@@ -1,4 +1,14 @@
-*{
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: local('Bebas Neue Book Regular'), local('BebasNeueBook'),
+    url('../fonts/BebasNeueBook.woff2') format('woff2'),
+    url('../fonts/BebasNeueBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
     box-sizing: border-box;
 }
 
@@ -41,11 +51,11 @@ body {
     color: white;
 }
 
-.navbar-contacts{
+.navbar-contacts {
     text-align: right;
 }
 
-.contacts-text{
+.contacts-text {
     display: block;
     color: white;
     margin-bottom: 4px;
@@ -57,4 +67,83 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+.main {
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 54px;
+    display: flex;
+}
+
+.home-img path {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.home-img path:hover {
+    opacity: 1;
+}
+
+path.current-floor {
+    opacity: 1;
+}
+
+.main-info {
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.counter-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-down {
+    transform: rotateX(180deg);
+}
+
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-family: 'Bebas Neue Book', sans-serif;
+    font-size: 37px;
+    line-height: 44px;
+    color: #635854;
+    margin-top: 68px;
+}
+
+.counter-text {
+    font-family: 'Bebas Neue Book', sans-serif;
+    font-size: 76px;
+    font-weight: bold;
+    color: #635854;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 67px;
+    background: #3596F5;
+    border-radius: 6px;
+    border: none;
+
+}
+
+.button-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    padding: 0 36px;
 }
